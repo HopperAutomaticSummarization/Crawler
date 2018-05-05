@@ -14,6 +14,9 @@ save_path 保存文件的路径
 '''
 def crawler(url1, url2, page_num, save_path):
     browser = webdriver.Chrome()
+    ###### for linux ######
+    # browser = webdriver.Chrome("./chromedriver")
+
     browser.get(url1)
     #人工登录阶段
     time.sleep(5)
